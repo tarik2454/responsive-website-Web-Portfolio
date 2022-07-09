@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Permanent+Marker&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <title>Web-Portfolio</title>
 </head>
@@ -66,6 +67,7 @@
     <!-- about -->
     <section class="about">
         <div class="about__inner">
+
             <div class="about__left">
                 <div class="about__foto">
                     <img class="about__img" src="./img/tarik.jpg" alt="">
@@ -74,14 +76,13 @@
 
             <div class="about__right">
                 <div class="about__content">
-                    <h3 class="section__subtitle">ABOUT</h3>
+                    <h3 class="section__subtitle  section__subtitle--about">ABOUT</h3>
                     <h2 class="about__title">Jane Doe</h2>
                     <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim quisque leo dictum quis turpis. Felis eget porta sem leo ornare nunc lacus.</div>           
                 </div>
                 
                 <div class="skills">
-                    <h3 class="section__subtitle  section__subtitle--about">SKILLS</h3>
-
+                    <h3 class="section__subtitle  section__subtitle--skills">SKILLS</h3>
                     <div class="skills__content">
                         <ul class="skills__list">
                             <li class="skills__item">Photoshop</li>
@@ -94,7 +95,7 @@
                             <li class="skills__item">CSS</li>
                             <li class="skills__item">JavaScript</li>
                         </ul>
-                        
+
                         <ul class="skills__list">
                             <li class="skills__item">Bootstrap 4.0</li>
                             <li class="skills__item">React JS</li>
@@ -102,13 +103,227 @@
                         </ul>
                     </div>
                 </div>
-            </div>       
+            </div>  
+                 
         </div><!-- /.about__inner -->
     </section><!-- /.about -->
 
 
+    <!-- works -->
+    <section class="works">
+        <div class="container">
+
+            <h3 class="section__subtitle">WORK</h3>
+
+                <div class="works__nav">
+                    <a class="works__nav-link">ALL</a>
+                    <a class="works__nav-link">WEB DESIGN</a>
+                    <a class="works__nav-link">DIGITAL ART</a>
+                    <a class="works__nav-link">PEN AND INK</a>
+                </div>
+
+                <div class="swiper-container  swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="works__inner  swiper-slide">
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+                        </div><!-- /.swiper-slide -->
+
+                        <div class="works__inner  swiper-slide">
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+
+                            <a class="works__item" href="#" target="_blank">
+                                <img class="works__img" src="./img/logo.jpg" alt="">
+                            </a>
+                        </div><!-- /.swiper-slide -->
+                    </div><!-- /.swiper-wrapper -->
+
+                    <div class="swiper-pagination"></div>
+                </div><!-- /.swiper-container -->
+
+        </div><!-- /.container -->
+    </section><!-- /.works -->
 
 
+    <section class="blog">
+        <div class="container">
+
+            <div class="section__subtitle  section__subtitle--blog">BLOG</div>
+
+            <div class="swiper-container  swiper2">
+                <div class="swiper-wrapper">
+                    <div class="blog__inner  swiper-slide">
+                        <div class="blog__item">
+                            <div class="blog__title">Lorem Ipsum</div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                            </div>
+                            <a class="blog__footer" href="#">Read More</a>
+                        </div>
+
+                        <div class="blog__item">
+                            <div class="blog__title">Lorem Ipsum</div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                            </div>
+                            <a class="blog__footer" href="#">Read More</a>
+                        </div>
+
+                        <div class="blog__item">
+                            <div class="blog__title">Lorem Ipsum</div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                            </div>
+                            <a class="blog__footer" href="#">Read More</a>
+                        </div>
+                    </div><!-- /.swiper-slide -->
+
+                    <div class="blog__inner  swiper-slide">
+                        <div class="blog__item">
+                            <div class="blog__title">Lorem Ipsum</div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                            </div>
+                            <a class="blog__footer" href="#">Read More</a>
+                        </div>
+
+                        <div class="blog__item">
+                            <div class="blog__title">Lorem Ipsum</div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                            </div>
+                            <a class="blog__footer" href="#">Read More</a>
+                        </div>
+
+                        <div class="blog__item">
+                            <div class="blog__title">Lorem Ipsum</div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pellentesque lectus leo arcu. Auctor nulla non est amet, urna a et vestibulum.</p>
+                            </div>
+                            <a class="blog__footer" href="#">Read More</a>
+                        </div>
+                    </div><!-- /.swiper-slide -->
+                </div><!-- /.swiper-wrapper -->
+
+                <div class="swiper-pagination"></div>
+
+            </div><!-- /.swiper__container -->
+
+        </div><!-- /.container -->
+    </section><!-- /.blog -->
+
+
+    <section class="contact">
+        <div class="container">
+
+            <div class="section__subtitle  section__subtitle--blog">CONTACT</div>
+
+            <div class="contact__inner">
+                <div class="contact__left">
+                    <div class="contact__title">Let’s Talk</div>
+                    <div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat eget nulla morbi magna enim. Ultricies massa arcu ultricies quis.</div>
+                    <div class="social  social--contact">
+                        <a class="social__link">
+                            <img src="./img/social-icons/linkedin.svg" alt="">
+                        </a>
+                        <a class="social__link">
+                            <img src="./img/social-icons/github.svg" alt="">
+                        </a>
+                        <a class="social__link">
+                            <img src="./img/social-icons/figma.svg" alt="">
+                        </a>
+                        <a class="social__link">
+                            <img src="./img/social-icons/instagram.svg" alt="">
+                        </a>
+                        <a class="social__link">
+                            <img src="./img/social-icons/dribbble.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact__right">
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="input-name">Name</label>
+                            <input class="form__input" type="text" name="input-name" id="input-name" placeholder="Write your name here">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">Email</label>
+                            <input class="form__input" type="email" name="input-email" id="input-email" placeholder="Write your email here">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-text">Message</label>
+                            <textarea class="form__input  form__input--textarea" name="input-text" id="input-text" placeholder="Write your message here"></textarea>
+                        </div>
+                    </form>
+
+                    <div class="form__footer">
+                        <button class="btn" type="submit">Send Message</button>
+                    </div>
+                </div><!-- /.contact__right -->
+            </div><!-- /.contact__inner -->
+
+        </div><!-- /.container -->
+    </section><!-- /.section -->
+
+
+    <footer class="footer"></footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
