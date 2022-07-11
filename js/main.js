@@ -4,7 +4,7 @@ new Swiper('.swiper1', {
     slidesPerView: 'auto',
     loop: true,
     loopedSlides: 2,
-    spaceBetween: 300,
+    spaceBetween: 500,
     centeredSlides: true,
 
     pagination: {
@@ -18,7 +18,7 @@ new Swiper('.swiper2', {
     slidesPerView: 'auto',
     loop: true,
     loopedSlides: 2,
-    spaceBetween: 300,
+    spaceBetween: 500,
     centeredSlides: true,
 
     pagination: {
