@@ -26,3 +26,6 @@ new Swiper('.swiper2', {
         clickable: true,
     },
 });
+
+const hed = document.querySelector('.header').offsetHeight;
+console.log(hed)
