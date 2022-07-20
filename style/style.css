@@ -26,6 +26,14 @@ p {
     margin: 0 0 10px 0; 
  }
 
+.hide {
+    display: none;
+ }
+
+.text-center {
+    text-align: center;
+}
+
 
 /* -- container -- */
 .container {
@@ -39,8 +47,6 @@ p {
 /* -- header -- */
 .header {
     width: 100%;
-    max-width: 1310px;
-    min-height: 64px;
     margin: 12px auto 0 auto;
 
     background-color: #161616;
@@ -49,10 +55,12 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header.fixed {
+    margin: 0 auto;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -60,8 +68,11 @@ p {
 }
 
 .header__inner {
+    max-width: 1310px;
+    margin: 0 auto;
     padding: 20px;
 }
+
 
 /* -- nav -- */
 .nav {
@@ -396,7 +407,7 @@ p {
 /* -- works -- */
 .works {
     overflow-x: hidden;
-    padding: 88px 0 159px 0;
+    padding: 88px 0 100px 0;
 }
 
 .works__nav {
@@ -438,6 +449,7 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 39px;
+    margin: 0 auto 50px auto;
 }
 
 .works__item {
@@ -652,8 +664,9 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
     font-family: inherit;
     font-weight: 400;
     font-size: 14px;
-}
 
+    outline: none;
+}
 
 .footer {
     padding: 35px 0 9px 0;
@@ -701,41 +714,6 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
     }
 
     /* -- header -- */
-    .header {
-        margin: 0 auto;
-    }
-
-    .nav {
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-        background-color: #333;
-        border-top-left-radius: 2%;
-        border-bottom-left-radius: 2%;
-
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        z-index: 1000;
-
-        transition: transform .2s linear;
-    }
-
-    .nav.active {  
-        transform: translateX(100%);  
-    }
-
-    .nav__link {
-        display: block;
-        margin: 10px 50px 10px 50px;
-    }
-
-    .burger {
-        display: block;
-    }
-
     .nav--footer {
         display: block;  
     }
@@ -760,6 +738,48 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
 
 
 @media screen and (max-width: 767px) {
+
+    /* -- header -- */
+    .header {
+        margin: 0 auto;
+    }
+
+    .header__inner {
+        padding: 25px;
+        background-color: #161616;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        background-color: #333;
+
+        position: absolute;
+        top: -390%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        
+        transition: transform .2s linear;
+    }
+
+    .nav.active {  
+        transform: translateY(100%);  
+    }
+
+    .nav__link {
+        display: block;
+        margin: 10px 50px 10px 50px;
+        font-size: 14px;
+    }
+
+    .burger {
+        display: block;
+    }
 
     /* -- intro -- */
     .intro {
@@ -797,7 +817,7 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
 
     /* -- works -- */
     .works {
-        padding: 68px 0 139px 0;
+        padding: 68px 0 80px 0;
     }
 
     .works__inner {
@@ -809,9 +829,6 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
         margin-bottom: 38px;
     }
 
-    .works__nav-link {
-        margin: 0 15px 12px 15px;
-    }
 
     /* -- blog -- */  
     .blog {
@@ -831,6 +848,10 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
 
     .footer {
         padding: 25px 0 9px 0;
+    }
+
+    .nav__footer .nav__link {
+        margin: 0 27.5px 0 27.5px;
     }
 }
 
@@ -888,12 +909,8 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
     }
 
     /* -- works -- */
-    .works {
-        overflow-x: hidden;
-    }
-
     .works__nav {
-        margin-bottom: 28px;
+        margin-bottom: 23px;
     }
 
     .works__nav-link {
@@ -904,6 +921,7 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
     .works__inner {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;   
+        
     }
 
     /* -- blog -- */
