@@ -13,10 +13,15 @@ navLink.forEach(function(item) {
     item.addEventListener('click', function(event) {
         event.preventDefault();
 
+        navLink.forEach(function(item) {
+            item.classList.remove('active');
+        })    
+        this.classList.add('active');
+
         setTimeout(function() {
             navToggle.classList.remove('active');
             nav.classList.remove('active');
-        }, 300);    
+        }, 400);    
     });  
 });
 
@@ -53,17 +58,19 @@ scrollBtn.forEach(function(item) {
 // -- filter 
 const filterBtn = document.querySelectorAll('[data-filter]');
 const dataCat = document.querySelectorAll('[data-cat]');
-const btn = document.querySelector('.btn').offsetHeight;
-console.log(btn)
-
-for (let i = 8; i < dataCat.length; i++) { 
-    dataCat[i].classList.add('hide'); 
-};
+const worksNavItem = document.querySelectorAll('#worksNav a');
 
 filterBtn.forEach(function(item) {
     item.addEventListener('click', function(event) {
         event.preventDefault();
-      
+
+        worksNavItem.forEach(function(item) {
+            item.addEventListener('click', function() {
+                this.classList.add('active');
+            });
+            item.classList.remove('active');
+        });
+
         const cat = this.dataset.filter;
 
         if(cat == 'ALL') {

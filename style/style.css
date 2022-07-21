@@ -114,7 +114,7 @@ p {
     transition: width .2s linear;
 }
 
-.nav__link:hover::after {
+.nav__link.active::after {
     width: 100%;
 }
 
@@ -441,7 +441,11 @@ p {
     transition: width .2s linear;
 }
 
-.works__nav-link:hover::after {
+/* .works__nav-link:hover::after {
+    width: 100%;
+} */
+
+.works__nav-link.active::after {
     width: 100%;
 }
 
@@ -910,12 +914,12 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
 
     /* -- works -- */
     .works__nav {
-        margin-bottom: 23px;
+        margin-bottom: 24px;
     }
 
     .works__nav-link {
         font-size: 11px;
-        margin: 0 9px 9px 9px;
+        margin: 0 9px 11px 9px;
     }
 
     .works__inner {
