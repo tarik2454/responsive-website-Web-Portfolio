@@ -114,10 +114,7 @@ p {
     transition: width .2s linear;
 }
 
-.nav__link:hover::after {
-    width: 100%;
-}
-
+.nav__link:hover::after,
 .nav__link.active::after {
     width: 100%;
 }
@@ -445,10 +442,7 @@ p {
     transition: width .2s linear;
 }
 
-/* .works__nav-link:hover::after {
-    width: 100%;
-} */
-
+.works__nav-link:hover::after,
 .works__nav-link.active::after {
     width: 100%;
 }
@@ -753,7 +747,7 @@ transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
     }
 
     .header__inner {
-        padding: 25px;
+        padding: 30px;
         background-color: #161616;
     }
     
