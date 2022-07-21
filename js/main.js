@@ -21,7 +21,7 @@ navLink.forEach(function(item) {
         setTimeout(function() {
             navToggle.classList.remove('active');
             nav.classList.remove('active');
-        }, 400);    
+        }, 300);    
     });  
 });
 
