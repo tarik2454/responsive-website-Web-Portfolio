@@ -1,6 +1,6 @@
 # responsive-website-Web-Portfolio
 
-Project Link: [https://tarik2454.github.io/Web-Portfolio/](https://tarik2454.github.io/Web-Portfolio/)
+Project Link: [https://tarik2454.github.io/responsive-website-Web-Portfolio/](https://tarik2454.github.io/responsive-website-Web-Portfolio/)
 
 ## Technologies used:
 
