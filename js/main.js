@@ -58,18 +58,15 @@ scrollBtn.forEach(function(item) {
 // -- filter 
 const filterBtn = document.querySelectorAll('[data-filter]');
 const dataCat = document.querySelectorAll('[data-cat]');
-const worksNavItem = document.querySelectorAll('#worksNav a');
 
 filterBtn.forEach(function(item) {
     item.addEventListener('click', function(event) {
         event.preventDefault();
 
-        worksNavItem.forEach(function(item) {
-            item.addEventListener('click', function() {
-                this.classList.add('active');
-            });
+        filterBtn.forEach(function(item) {
             item.classList.remove('active');
         });
+        this.classList.add('active');
 
         const cat = this.dataset.filter;
 
