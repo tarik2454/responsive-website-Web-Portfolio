@@ -1,4 +1,4 @@
-# responsive-website-Web-Portfolio
+# Responsive website Web-Portfolio
 
 Project Link: [https://tarik2454.github.io/responsive-website-Web-Portfolio/](https://tarik2454.github.io/responsive-website-Web-Portfolio/)
 
@@ -11,4 +11,5 @@ Project Link: [https://tarik2454.github.io/responsive-website-Web-Portfolio/](ht
 
 ## Contact:
 
-* email - tarik2454@gmail.com
+Telegram: <https://t.me/tarik_2454>  
+Email: <tarik2454@gmail.com>
